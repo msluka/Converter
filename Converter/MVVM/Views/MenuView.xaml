@@ -25,5 +25,19 @@
             Text="- UNIT CONVERTER -"
             TextColor="{StaticResource TextColor}"
             VerticalTextAlignment="Center"/>
+        <!--#region Information -->
+        <Grid Grid.Row="1"
+              Padding="15"
+              RowDefinitions=".7*, .3*"
+              BackgroundColor="{StaticResource AppColor1}">
+            <Image>
+                <Image.Source>
+                    <FontImageSource FontFamily="Icons"
+                                     Glyph="&#xF0A0;"
+                                     Size="50"/>
+                </Image.Source>
+            </Image>            
+        </Grid>
+        <!--#endregion-->
     </Grid>
 </ContentPage>
