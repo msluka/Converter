@@ -49,6 +49,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <PackageReference Include="UnitsNet" Version="4.150.0" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiXaml Update="MVVM\Views\ConverterView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
