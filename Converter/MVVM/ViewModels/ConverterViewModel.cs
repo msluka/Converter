@@ -5,6 +5,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using UnitsNet;
 
 namespace Converter.MVVM.ViewModels
@@ -19,7 +20,11 @@ namespace Converter.MVVM.ViewModels
         public string CurrentToMeasure { get; set; }
         public double FromValue { get; set; } = 1;
         public double ToValue { get; set; }
-
+        public ICommand ReturnCommand =>
+                             new Command(() =>
+                             {
+                                 Convert();
+                             });
         public ConverterViewModel()
         {
             QuantityName = "Length";
@@ -31,7 +36,7 @@ namespace Converter.MVVM.ViewModels
             CurrentToMeasure = "Centimeter";
 
             Convert();
-           
+
         }
         public void Convert()
         {

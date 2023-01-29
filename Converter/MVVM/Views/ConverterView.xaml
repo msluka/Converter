@@ -21,7 +21,8 @@
                 <Entry FontSize="100"
                        HorizontalTextAlignment="Center"
                        Text="{Binding FromValue}"
-                       TextColor="{StaticResource TextColor}"/>
+                       TextColor="{StaticResource TextColor}"
+                       ReturnCommand="{Binding ReturnCommand}"/>
                 <Picker HorizontalTextAlignment="Center"
                         TextColor="{StaticResource TextColor}"                        
                         ItemsSource="{Binding FromMeasures}"
