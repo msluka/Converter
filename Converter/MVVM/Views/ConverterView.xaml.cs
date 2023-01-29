@@ -9,4 +9,10 @@ public partial class ConverterView : ContentPage
 		InitializeComponent();
 		BindingContext = new ConverterViewModel();
 	}
+
+    private void SelectedIndexChanged(object sender, EventArgs e)
+    {
+		var viewModel = (ConverterViewModel)BindingContext;
+		viewModel.Convert();
+    }
 }

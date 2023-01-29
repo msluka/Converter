@@ -26,7 +26,8 @@
                 <Picker HorizontalTextAlignment="Center"
                         TextColor="{StaticResource TextColor}"                        
                         ItemsSource="{Binding FromMeasures}"
-                        SelectedItem="{Binding CurrentFromMeasure}"/>
+                        SelectedItem="{Binding CurrentFromMeasure}"
+                        SelectedIndexChanged="SelectedIndexChanged"/>
 
             </VerticalStackLayout>
         </Grid>
@@ -42,7 +43,8 @@
                 <Picker HorizontalTextAlignment="Center"
                         TextColor="{StaticResource TextColor}"
                         ItemsSource="{Binding ToMeasures}"
-                        SelectedItem="{Binding CurrentToMeasure}"/>
+                        SelectedItem="{Binding CurrentToMeasure}"
+                        SelectedIndexChanged="SelectedIndexChanged"/>
 
             </VerticalStackLayout>
         </Grid>
