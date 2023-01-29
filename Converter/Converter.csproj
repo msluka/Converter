@@ -15,7 +15,7 @@
 		<ApplicationTitle>Converter</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.converter</ApplicationId>
+		<ApplicationId>com.msluka.converter</ApplicationId>
 		<ApplicationIdGuid>ed80bf24-772d-410f-9c05-1f7827c1d4bf</ApplicationIdGuid>
 
 		<!-- Versions -->

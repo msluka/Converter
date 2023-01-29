@@ -16,7 +16,13 @@ public partial class MenuView : ContentPage
 		var option = ((Label)element.Children.LastOrDefault()).Text;
 
 
-        DisplayAlert("Alert", option, "OK");
+		var converterView = new ConverterView()
+		{
+			BindingContext = new ConverterViewModel(option)
+
+		};
+
+		Navigation.PushAsync(converterView);
 
     }
 }

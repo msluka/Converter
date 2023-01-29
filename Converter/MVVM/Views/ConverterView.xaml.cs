@@ -6,8 +6,7 @@ public partial class ConverterView : ContentPage
 {
 	public ConverterView()
 	{
-		InitializeComponent();
-		BindingContext = new ConverterViewModel();
+		InitializeComponent();		
 	}
 
     private void SelectedIndexChanged(object sender, EventArgs e)
